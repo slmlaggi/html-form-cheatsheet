@@ -33,7 +33,7 @@
                         <td class="code">&lt;input&gt;</td>
                         <td>Input</td>
                         <td>Specifies an input field where the user can enter data.</td>
-                        <td class="notes">The <em>input</em> element can be displayed in several ways, modified by the <a href="type-attribute"><em>type</em></a> attribute. (Defauls to "text" if not specified.)
+                        <td class="notes">The <em>input</em> element can be displayed in several ways, modified by the <a href="#type-attribute"><em>type</em></a> attribute. (Defauls to "text" if not specified.)
                             <a href="#input-attributes">Attributes</a>
                         </td>
                     </tr>
@@ -49,14 +49,14 @@
                         <td class="code">&lt;button&gt;</td>
                         <td>Button</td>
                         <td>Defines a clickable button</td>
-                        <td class="notes">Text can be put inside a <em>button</em> element. <strong>Always specify the <a href="type-attribute"><em>type</em></a> attribute for a button element.</strong> 
+                        <td class="notes">Text can be put inside a <em>button</em> element. <strong>Always specify the <a href="#type-attribute"><em>type</em></a> attribute for a button element.</strong> 
                             <a href="#button-attributes">Attributes</a>
                         </td>
                     </tr>
                     <tr id="label-tag">
                         <td class="code">&lt;label&gt;</td>
                         <td>Label</td>
-                        <td>Defines a label for elements such as &lt;input&gt; and &lt;textarea&gt;.</td>
+                        <td>Defines a label for elements such as <a href="#input-tag" class=""code>&lt;input&gt;</a> and <a href="#textarea-tag" class="code">&lt;textarea&gt;</a>.</td>
                         <td class="notes">Using <em>labels</em> with the elements listed would benefit the accessibility of them. 
                             <a href="#label-attributes">Attributes</a>
                         </td>
@@ -72,10 +72,78 @@
                     <tr id="option-tag">
                         <td class="code">&lt;option&gt;</td>
                         <td>Option</td>
-                        <td>Defines an option in a select list. Goes inside a <a href="#select-tag" class="code">&lt;select&gt;</a> or <a href="#optgroup" class="code">&lt;optgroup&gt;</a> element.</td>
+                        <td>Defines an option in a select list. Goes inside a <a href="#select-tag" class="code">&lt;select&gt;</a> or <a href="#optgroup-tag" class="code">&lt;optgroup&gt;</a> element.</td>
                         <td>Can be used without any attributes, but the <a href="#value-attribue" class="code">value</a> attribute is usually needed.<br>Related options can be grouped within the <a href="optgroup-tag" class="code">&lt;optgroup&gt;</a> tag for longer lists of options. 
                             <a href="#option-attributes">Attributes</a>
                         </td>
+                    </tr>
+                    <tr id="optgroup-tag">
+                        <td class="code">&lt;optgroup&gt;</td>
+                        <td>Option group</td>
+                        <td>Used to group related options in a <a href="select-tag" class="code">&lt;select&gt;</a> element (which is a drop-down list).</td>
+                        <td class="notes">Users can easily handle groups of related options if there is a long list of options. 
+                            <a href="#optgroup-attributes">Attributes</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="attributes">
+            <h2>General form tags attributes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                        <th>Common values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="name-attribute">
+                        <td class="code">name</td>
+                        <td>Specifies a name for an element. Used to reference elements in JavaScript or reference data after a form is submitted.</td>
+                        <td class="values">text/<em>name</em></td>
+                    </tr>
+                    <tr id="form-attribute">
+                        <td class="code">form</td>
+                        <td>Specifies the form the element belongs to.</td>
+                        <td class="values"><em>form_id</em></td>
+                    </tr>
+                    <tr id="disabled-attribute">
+                        <td class="code">disabled</td>
+                        <td>Specifies whether the element should be disabled.</td>
+                        <td class="values">disabled</td>
+                    </tr>
+                    <tr id="required-attribute">
+                        <td class="code">required</td>
+                        <td>Specifies if an input must be given before submitting a form</td>
+                        <td class="values">required</td>
+                    </tr>
+                    <tr id="type-attribute">
+                        <td class="code">type</td>
+                        <td>Specifies the type of button/input</td>
+                        <td class="values">button/reset/submit/checkbox/radio/number/email</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Specific element attributes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                        <th>Common values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>placeholder</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>placeholder</td>
                     </tr>
                 </tbody>
             </table>
